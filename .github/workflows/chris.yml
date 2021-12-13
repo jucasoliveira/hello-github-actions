@@ -24,3 +24,5 @@ jobs:
       #     GITHUB_WORKFLOW: ${{ github.workflow }}
       #     GITHUB_ACTION: ${{ github.action }}
       - uses: ./chris-action
+        with:
+          MY_NAME: "Chris"

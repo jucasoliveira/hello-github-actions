@@ -1,6 +1,11 @@
 name: "Chris Action"
 description: "Greet someone"
 author: "chris@chris.com"
+inputs:
+  MY_NAME:
+    description: "Who to greet"
+    required: true
+    default: "World"
 runs:
   using: "node16"
   main: "index.js"
