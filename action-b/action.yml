@@ -1,0 +1,14 @@
+name: "Hello Actions"
+description: "Greet someone"
+author: "octocat@github.com"
+inputs:
+  TEST_INPUT:
+    description: "A test input"
+    type: "string"
+    default: "Hello"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "mic"
+  color: "yellow"
