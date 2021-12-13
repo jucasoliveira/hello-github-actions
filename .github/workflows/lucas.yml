@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
       - name: Hello world action
         run: echo "Hello world!"
         env:
@@ -25,6 +26,6 @@ jobs:
         with:
           MY_NAME: "Lucas"
       - name: Test
-        uses: ./action-b
+        run: npm test
         with:
           TEST_INPUT: "TEST lucas_branch"
