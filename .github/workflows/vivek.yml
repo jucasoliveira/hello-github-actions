@@ -1,0 +1,26 @@
+name: Vivek workflow
+on:
+  push:
+    branches:
+      - vivek_work
+
+jobs:
+  build:
+    name: Node Run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build React App
+      - uses: ./vivekreactbuild
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     GITHUB_REPOSITORY: ${{ github.repository }}
+      #     GITHUB_SHA: ${{ github.sha }}
+      #     GITHUB_REF: ${{ github.ref }}
+      #     GITHUB_EVENT_NAME: ${{ github.eventName }}
+      #     GITHUB_WORKFLOW: ${{ github.workflow }}
+      #     GITHUB_ACTION: ${{ github.action }}
+      # # - uses: ./action-a
+      # #   with:
+      # #     MY_NAME: 'Lucas'
+      # # - uses: ./action-b
