@@ -27,5 +27,5 @@ jobs:
           MY_NAME: "Lucas"
       - name: Test
         run: npm test
-        with:
+        env:
           TEST_INPUT: "TEST lucas_branch"
