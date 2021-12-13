@@ -1,0 +1,9 @@
+name: "Chris Action"
+description: "Greet someone"
+author: "chris@chris.com"
+runs:
+  using: "node14"
+  image: "index.js"
+branding:
+  icon: "mic"
+  color: "purple"

@@ -2,7 +2,7 @@ name: A workflow for my Hello World file
 on:
   push:
     branches:
-      - master
+      - chris
 
 jobs:
   build:
@@ -10,17 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Hello world action
-        run: echo "Hello world!"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_SHA: ${{ github.sha }}
-          GITHUB_REF: ${{ github.ref }}
-          GITHUB_EVENT_NAME: ${{ github.eventName }}
-          GITHUB_WORKFLOW: ${{ github.workflow }}
-          GITHUB_ACTION: ${{ github.action }}
-      - uses: ./action-a
+      - uses: actions/setup-node@v2
         with:
-          MY_NAME: "Lucas"
-      - uses: ./action-b
+          node-version: "14"
+      # - name: Hello world action
+      #   run: echo "Hello world!"
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     GITHUB_REPOSITORY: ${{ github.repository }}
+      #     GITHUB_SHA: ${{ github.sha }}
+      #     GITHUB_REF: ${{ github.ref }}
+      #     GITHUB_EVENT_NAME: ${{ github.eventName }}
+      #     GITHUB_WORKFLOW: ${{ github.workflow }}
+      #     GITHUB_ACTION: ${{ github.action }}
+      - uses: ./chris-action
