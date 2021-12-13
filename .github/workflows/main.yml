@@ -12,7 +12,6 @@ jobs:
       - uses: actions/checkout@v1
       - name: Hello world action
         run: echo "Hello world!"
-        color: 0xCCCA6F
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}

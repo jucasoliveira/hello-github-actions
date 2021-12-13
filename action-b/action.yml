@@ -11,4 +11,4 @@ runs:
   image: "Dockerfile"
 branding:
   icon: "mic"
-  color: "yellow"
+  color: 0xCCCA6F
