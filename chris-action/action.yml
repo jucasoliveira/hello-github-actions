@@ -3,7 +3,7 @@ description: "Greet someone"
 author: "chris@chris.com"
 runs:
   using: "node16"
-  image: "index.js"
+  main: "index.js"
 branding:
   icon: "mic"
   color: "purple"
