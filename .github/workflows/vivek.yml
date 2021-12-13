@@ -9,9 +9,8 @@ jobs:
     name: Node Run
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
       - name: Build React App
-      - uses: ./vivekreactbuild
+        uses: ./vivekreactbuild
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       #     GITHUB_REPOSITORY: ${{ github.repository }}
