@@ -2,7 +2,7 @@ name: "Chris Action"
 description: "Greet someone"
 author: "chris@chris.com"
 runs:
-  using: "node14"
+  using: "node16"
   image: "index.js"
 branding:
   icon: "mic"
