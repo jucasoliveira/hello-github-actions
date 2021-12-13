@@ -4,7 +4,7 @@
   "description": "small npm project",
   "main": "index.js",
   "scripts": {
-    "test": "echo this is a test $INPUT_TEST_INPUT",
+    "test": "echo this is a test $TEST_INPUT",
     "start": "node index.js"
   },
   "repository": {
